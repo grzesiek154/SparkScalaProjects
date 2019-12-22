@@ -1,6 +1,7 @@
 package com.spark.transformations
 
 import org.apache.spark.SparkContext
+
 import org.apache.log4j._
 
 object CommonTransformations {
@@ -114,4 +115,38 @@ object CommonTransformations {
     numbers.sample(true,0.5).collect.foreach(println)
     
   }
+
+    
+ //mapPartitionWithIndex and mapPartition   
+//    One small difference between the mapPartitionWithIndex and mapPartition
+//transformations is that the partition number is available to the former transformation.
+//In short, the mapPartitions and mapPartitionsWithIndex transformations are used
+//to optimize the performance of your data processing logic by reducing the number of
+//times the expensive setup step is called.
+    
+    val sampleList = Array("One", "Two", "Three", "Four","Five")
+    val sampleRDD = sc.parallelize(sampleList, 2)
+//    val result = sampleRDD.mapPartitions((itr:Iterator[String]) => {
+//                val rand = new Random(System.currentTimeMillis +
+//                Random.nextInt)
+//                itr.map(l => l + ":" + rand.nextInt)
+//    })
+    
+   
+    
+    
+     def addRandomNumber(rows:Iterator[String]) = {
+      val rand = new Random(System.currentTimeMillis + Random.nextInt)
+      rows.map(l => l + " : " + rand.nextInt)
+      
+    }
+    
+    val result = sampleRDD.mapPartitions((rows: Iterator[String]) => addRandomNumber(rows))
+    
+    println("MapPartition transformation")
+    result.collect.foreach(println)
+    
+  }
+  
+
 }
