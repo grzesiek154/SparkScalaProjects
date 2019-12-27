@@ -19,6 +19,8 @@ object MoviesAmountInParticularYear {
       
       val sc = new SparkContext("local[*]", "MoviesAmountInParticularYear")
       
+      
+      
       val lines = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movie-ratings.tsv")
       
       val yearAndName = lines.map(x => (x.split("\t")(2).toInt, 1))
