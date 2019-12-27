@@ -51,5 +51,8 @@ object CommonActions {
 //partition is reached. If n is larger than the number of rows in the dataset, then it will
 //return all the rows. take(1) is equivalent to the first() action    
     
+    val takeVal = numberRDD.take(6)
+    println("take action")
+    println(takeVal)
   }
 }
