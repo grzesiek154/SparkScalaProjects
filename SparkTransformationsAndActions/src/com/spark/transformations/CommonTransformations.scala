@@ -1,3 +1,4 @@
+
 package com.spark.transformations
 
 import org.apache.spark.SparkContext
@@ -63,5 +64,5 @@ def main (args: Array[String]) {
     result.collect.foreach(println)
     
   }
-
 }
+
