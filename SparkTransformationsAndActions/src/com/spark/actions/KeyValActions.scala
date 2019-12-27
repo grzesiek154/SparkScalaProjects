@@ -1,8 +1,9 @@
-package com.spark.transformations
+package com.spark.actions
 
 import org.apache.spark._
 import org.apache.spark.SparkContext._
 import org.apache.log4j._
+import org.apache.spark.rdd.RDD.rddToPairRDDFunctions
 
 object KeyValActions {
   
