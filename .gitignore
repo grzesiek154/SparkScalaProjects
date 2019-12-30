@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 .cache-main
 *.cache-main
 *.class
+=======
+*.class
+*.log
+.cache-main
+*.cache-main
+>>>>>>> home
