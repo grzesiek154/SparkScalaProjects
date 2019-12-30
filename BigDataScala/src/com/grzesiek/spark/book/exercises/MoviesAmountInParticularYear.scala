@@ -11,11 +11,11 @@ object MoviesAmountInParticularYear {
     
       Logger.getLogger("org").setLevel(Level.ERROR)
       
-      def extracYearAndName(line: String) {
-        
-        val elements = line.split("\\t")
-        (elements(1), elements(2))
-      }
+//      def extracYearAndName(line: String) {
+//        
+//        val elements = line.split("\\t")
+//        (elements(1), elements(2))
+//      }
       
       val sc = new SparkContext("local[*]", "MoviesAmountInParticularYear")
       
