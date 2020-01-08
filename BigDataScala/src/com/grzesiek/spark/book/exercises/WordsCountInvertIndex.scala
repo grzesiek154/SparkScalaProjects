@@ -15,12 +15,13 @@ object WordsCountInvertIndex {
   val sc = new SparkContext("local","WordsCountInvertIndex")
   val pathSeparator = File.separator
   
-  val fileContent = sc.wholeTextFiles(shakespeare.toString) // fileContent.keys - sciezki do plikow w folderze, fileContentValues - zawartosci plikow z folderu
-//  .
-//      flatMap { location_contents_tuple2 =>
-//        val words = location_contents_tuple2._2.split("""\W+""")
-//        val fileName = location_contents_tuple2._1.split("\\\\").last
-//        words.map(word => ((word, fileName), 1))
+  val fileContent = sc.wholeTextFiles(shakespeare.toString). // fileContent.keys - sciezki do plikow w folderze, fileContentValues - zawartosci plikow z folderu
+  
+      flatMap { location_contents_tuple2 =>
+        val words = location_contents_tuple2._2.split("""\W+""")
+        val fileName = location_contents_tuple2._1.split("\\\\").last
+        words.map(word => ((word, fileName), 1))
+       
         
 //        Wait, I said we're passing a function as an argument to flatMap . If so, why am I using braces {...} around
 //this function argument instead of parentheses (...) like you would normally expect when passing arguments
@@ -30,9 +31,10 @@ object WordsCountInvertIndex {
 //convention in the Scala community is to use braces for a multi-line anonymous function and to use parentheses
 //for a single expression when it fits on the same line.
     
-//  }.
-//  reduceByKey((total, value) => total + value).
-//  map { word_file_count_tup3 => (word_file_count_tup3._1._1, (word_file_count_tup3._1._2, word_file_count_tup3._2))
+  }.
+  reduceByKey((total, value) => total + value). // The last expression in the block, message, is the return value.
+                                                //Dlatego mimo ze tuple na ktorym dzialamy posiada 3 wartosci, reduceByKey bedzie wykonywac obliczenia dla ostatnie wartosci
+  map { word_file_count_tup3 => (word_file_count_tup3._1._1, (word_file_count_tup3._1._2, word_file_count_tup3._2))
   
   
 //    Note that the anonymous function reduceByKey expects must take two arguments, so I need parentheses
@@ -50,33 +52,20 @@ object WordsCountInvertIndex {
 //string, I would have to write it as "\\W+" . Your choice...
 //Let's
     
-//  }.
-//  groupByKey.
-//  sortByKey(ascending = true).
-//  mapValues {iterable =>
-//    val vect = iterable.toVector.sortBy { file_count_tup2 =>
-//     (-file_count_tup2._2, file_count_tup2._1)
-//      
-//    }
-//    vect.mkString(",")
-//  }  
-//      fileContent.foreach(println)
-//  
-//   fileContent.foreach(println)
-   
-   val filePaths = fileContent.keys.map(content => content.split(pathSeparator + pathSeparator).last)
-   val filesContent = fileContent.values
-   
-   val reduceByKeyTest = fileContent.flatMap{content =>
-       val words =content._2.split("""\W+""")
-       val fileName = content._1.split("\\\\")
-       words.map(word => (word, 1))
-       
-    }.reduceByKey((total, value) => total + value) // dlaczego ta funckja w tym miejscu zlicza wartosci dla ostatniego elementu w kilekcji
+  }.
+  groupByKey.
+  sortByKey(ascending = true).
+  mapValues {iterable =>
+    val vect = iterable.toVector.sortBy { file_count_tup2 =>
+     (-file_count_tup2._2, file_count_tup2._1)
+      
+    }
+    vect.mkString(",")
+  }  
+      fileContent.foreach(println)
+  
+   fileContent.foreach(println)
     
-    reduceByKeyTest.foreach(println)
-//    println("===========================================================")
-   
   }
   
 
