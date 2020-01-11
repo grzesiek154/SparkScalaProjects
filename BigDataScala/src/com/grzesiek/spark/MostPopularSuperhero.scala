@@ -33,11 +33,11 @@ object MostPopularSuperhero {
     val sc = new SparkContext("local[*]", "MostPopularSuperhero")   
     
     // Build up a hero ID -> name RDD
-    val names = sc.textFile("../marvel-names.txt")
+    val names = sc.textFile("../data/marvel-names.txt")
     val namesRdd = names.flatMap(parseNames)
     
     // Load up the superhero co-apperarance data
-    val lines = sc.textFile("../marvel-graph.txt")
+    val lines = sc.textFile("../data/marvel-graph.txt")
     
     // Convert to (heroID, number of connections) RDD
     val pairings = lines.map(countCoOccurences)
@@ -47,16 +47,18 @@ object MostPopularSuperhero {
     
     // Flip it to # of connections, hero ID
     val flipped = totalFriendsByCharacter.map( x => (x._2, x._1) )
+    flipped.foreach(println)
     
     // Find the max # of connections
     val mostPopular = flipped.max()
+    println("max = " + mostPopular)
     
     // Look up the name (lookup returns an array of results, so we need to access the first result with (0)).
     val mostPopularName = namesRdd.lookup(mostPopular._2)(0)
     
     // Print out our answer!
     //println(s"$mostPopularName is the most popular superhero with ${mostPopular._1} co-appearances.") 
-    names.foreach(println)
+   // names.foreach(println)
   }
   
 }
