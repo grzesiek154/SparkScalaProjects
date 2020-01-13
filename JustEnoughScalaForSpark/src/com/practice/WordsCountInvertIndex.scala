@@ -61,12 +61,10 @@ object WordsCountInvertIndex {
       
     }
     vect.mkString(",")
-//    The mkString method will help you create a String representation of collection elements by iterating through the collection. The mkString method has an overloaded method which allows you to provide a delimiter to separate each element in the collection. Furthermore, there is another overloaded method to also specify any prefix and postfix literal to be preprended or appended to the String representation..
-    //http://allaboutscala.com/tutorials/chapter-8-beginner-tutorial-using-scala-collection-functions/scala-mkstring-example/
-
- 
   }  
       fileContent.foreach(println)
+  
+   fileContent.foreach(println)
     
   }
   
