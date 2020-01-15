@@ -100,3 +100,4 @@ spark-warehouse/
 
 # For SBT
 .jvmopts
+SparkTransformationsAndActions/.cache-main

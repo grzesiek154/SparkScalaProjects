@@ -11,13 +11,15 @@ object MoviesAmountInParticularYear {
     
       Logger.getLogger("org").setLevel(Level.ERROR)
       
-      def extracYearAndName(line: String) {
-        
-        val elements = line.split("\\t")
-        (elements(1), elements(2))
-      }
+//      def extracYearAndName(line: String) {
+//        
+//        val elements = line.split("\\t")
+//        (elements(1), elements(2))
+//      }
       
       val sc = new SparkContext("local[*]", "MoviesAmountInParticularYear")
+      
+      
       
       val lines = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movie-ratings.tsv")
       
@@ -33,4 +35,5 @@ object MoviesAmountInParticularYear {
       //lines.foreach(println)
     
   }
+
 }

@@ -1,3 +1,4 @@
+
 package com.spark.transformations
 
 import org.apache.spark.SparkContext
@@ -15,7 +16,7 @@ def main (args: Array[String]) {
     val sc = new SparkContext("local[*]", "CommonTransformations")
     val stringRDD = sc.parallelize(stringList)
     
-    
+// flatMap()    
 //    The second most commonly used transformation is flatMap. Let’s say you want to
 //transform the stringRDD from a collection of strings to a collection of words. The
 //flatMap transformation is perfect for this use case
@@ -23,7 +24,7 @@ def main (args: Array[String]) {
     println("FlatMap transformation")
     wordRDD.collect().foreach(println)
     
-    
+// filter()    
 //    Another commonly used transformation is the filter transformation. It does what its
 //name sounds like, which is to filter a dataset down to the rows that meet the conditions
 //defined inside the given func.
@@ -63,5 +64,5 @@ def main (args: Array[String]) {
     result.collect.foreach(println)
     
   }
-
 }
+

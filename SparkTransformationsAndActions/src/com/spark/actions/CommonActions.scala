@@ -51,5 +51,20 @@ object CommonActions {
 //partition is reached. If n is larger than the number of rows in the dataset, then it will
 //return all the rows. take(1) is equivalent to the first() action    
     
+    val takeVal = numberRDD.take(6)
+    println("take action")
+    println(takeVal)
+    
+    
+//    lookup(key)
+//This action can be used as a quick way to verify whether a particular key exists in the
+//RDD. See Listing 3-64 for an example and Listing 3-65 for the output. If there is more
+//than one row with the same key, then the value of all those rows will be returned.
+    
+    val candyTxLookUp = spark.parallelize(List(("candy1", 5.2), ("candy2", 3.5),
+      ("candy1", 2.0), ("candy3", 6.0)))
+      candyTxLookUp.lookup("candy1")
+      candyTxLookUp.lookup("candy2")
+      candyTxLookUp.lookup("candy5")
   }
 }
