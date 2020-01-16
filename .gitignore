@@ -103,3 +103,7 @@ spark-warehouse/
 SparkTransformationsAndActions/.cache-main
 
 BigDataScala/.cache-main
+
+JustEnoughScalaForSpark/bin/com/grzesiek/spark/book/exercises/CollectionTransformationWithMap$$anonfun$1.class
+
+*.class
