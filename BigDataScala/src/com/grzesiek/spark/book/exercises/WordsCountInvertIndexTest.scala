@@ -2,6 +2,7 @@ package com.grzesiek.spark.book.exercises
 import java.io.File
 import org.apache.spark.SparkContext
 import org.apache.log4j._
+import org.apache.spark.sql.SQLContext
 
 object WordsCountInvertIndexTest {
   
@@ -13,21 +14,33 @@ object WordsCountInvertIndexTest {
   val shakespeare = new File("../data/shakespeare")
   val sc = new SparkContext("local","WordsCountInvertIndex")
   val pathSeparator = File.separator
-  //   val filePaths = fileContent.keys.map(content => content.split(pathSeparator + pathSeparator).last)
-//   val filesContent = fileContent.values
-  val fileContent = sc.wholeTextFiles(shakespeare.toString).flatMap{content =>
-       val words =content._2.split("""\W+""")
-       val fileName = content._1.split("\\\\")
-       words.map(word => (word, 1))
-     
-             
-    }
-//    .reduceByKey((total, value) => total + value)
-//    map { word_file_count_tup3 => (word_file_count_tup3._1._1, (word_file_count_tup3._1._2, word_file_count_tup3._2))}
+
+    val fileContent = sc.wholeTextFiles(shakespeare.toString).
+      flatMap {
+        case (location, contents) =>
+          val words = contents.split("""\W+""").
+            filter(word => word.size > 0) // #1
+          val fileName = location.split("\\\\").last
+          words.map(word => ((word.toLowerCase, fileName), 1)) // #2
+      }.
+      reduceByKey((count1, count2) => count1 + count2).
+      map {
+        case ((word, fileName), count) => (word, (fileName, count))
+      }.
+      groupByKey.
+      sortByKey(ascending = true).
+      mapValues { iterable =>
+        val vect = iterable.toVector.sortBy {
+          case (fileName, count) => (-count, fileName)
+        }
+        vect.mkString(",")
+      }
+
+  val sqlContext = new SQLContext(sc)
     
-    fileContent.foreach(println)
-    //println(reduceByKeyTest)
-//    println("===========================================================")
-   
+  //val dataFrame = sqlContext.createDataFrame(fileContent).toDF("word", "location_counts")
+  
+  fileContent.foreach(println)
+  
   }
 }

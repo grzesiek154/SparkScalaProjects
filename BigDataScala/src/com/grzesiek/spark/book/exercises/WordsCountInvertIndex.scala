@@ -35,7 +35,7 @@ object WordsCountInvertIndex {
   reduceByKey((total, value) => total + value). // The last expression in the block, message, is the return value.
                                                 //Dlatego mimo ze tuple na ktorym dzialamy posiada 3 wartosci, reduceByKey bedzie wykonywac obliczenia dla ostatnie wartosci
   map { word_file_count_tup3 => (word_file_count_tup3._1._1, (word_file_count_tup3._1._2, word_file_count_tup3._2))
-  
+  // tworzymy tuple zawierajacy slowo, sciezke do pliku w ktorym to slowo sie znajduje, oraz wartosc ile razy to slowo pojawilo sie w danym pliku
   
 //    Note that the anonymous function reduceByKey expects must take two arguments, so I need parentheses
 //around the argument list. Since this function fits on the same line, I used parentheses for reduceByKey ,
@@ -58,6 +58,11 @@ object WordsCountInvertIndex {
   mapValues {iterable =>
     val vect = iterable.toVector.sortBy { file_count_tup2 =>
      (-file_count_tup2._2, file_count_tup2._1)
+     
+//     What's RDD.mapValues ? I could use RDD.map , but I'm not changing the keys (the words), so rather than
+//have to deal with the tuple with both elements, mapValues just passes in the value part of the tuple and
+//reconstructs new (key,value) tuples with the new value that my function returns. So, mapValues is more
+//convenient to use than map when I have two-element tuples and I'm not modifying the keys.
       
     }
     vect.mkString(",")
