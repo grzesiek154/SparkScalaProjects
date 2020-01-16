@@ -101,3 +101,7 @@ spark-warehouse/
 # For SBT
 .jvmopts
 SparkTransformationsAndActions/.cache-main
+
+JustEnoughScalaForSpark/.cache-main
+
+BigDataScala/.cache-main
