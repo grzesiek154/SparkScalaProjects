@@ -11,9 +11,13 @@ object WordsCountInvertIndexSQL {
     
     def keep(word: String) : Boolean = {
       
-      val stopWords = Seq("a", "an")
+      val stopWords = Seq("a", "an","the","he","she", "it")
       
-      true
+      var checkSeqence = true
+      stopWords.map(word => if (stopWords.contains(word)) checkSeqence = false)
+      
+      
+      checkSeqence
     }
 
     Logger.getLogger("org").setLevel(Level.ERROR)
@@ -31,7 +35,7 @@ object WordsCountInvertIndexSQL {
       flatMap {
         case (location, contents) =>
           val words = contents.split("""\W+""").
-            filter(word => word.size > 0) // #1
+            filter(word => keep(word)) // #1
           val fileName = location.split("\\\\").last
           words.map(word => ((word.toLowerCase, fileName), 1)) // #2
       }.
@@ -72,21 +76,28 @@ object WordsCountInvertIndexSQL {
     //      Caching the DataFrame in memory prevents Spark from recomputing ii from the input files every time I
     //      write a query!
     //
-    fileContendDF.printSchema()
-    //      val topLocations = sqlContext.sql("""
-    //        SELECT word, total_count, locations[0] AS top_location, counts[0] AS top_count
-    //        FROM inverted_index
-    //        WHERE word LIKE '%love%' OR word LIKE '%hate%'
-    //        """)
-    //        topLocations.show()
+    //fileContendDF.printSchema()
+//          val topLocations = sqlContext.sql("""
+//            SELECT word, total_count, locations[0] AS top_location, counts[0] AS top_count
+//            FROM inverted_index
+//            WHERE word LIKE '%love%' OR word LIKE '%hate%'
+//            """)
+//            topLocations.show()
 
-    val topTwoLocations = sqlContext.sql("""
-        SELECT word, total_count,
-        locations[0] AS first_location, counts[0] AS first_count,
-        locations[1] AS second_location, counts[1] AS second_count
-        FROM inverted_index
-        WHERE word LIKE '%love%' OR word LIKE '%hate%'
+//    val topTwoLocations = sqlContext.sql("""
+//        SELECT word, total_count,
+//        locations[0] AS first_location, counts[0] AS first_count,
+//        locations[1] AS second_location, counts[1] AS second_count
+//        FROM inverted_index
+//        WHERE word LIKE '%love%' OR word LIKE '%hate%'
+//        """)
+//        topTwoLocations.show(20)
+    
+      val sqlAll = sqlContext.sql("""
+          SELECT word, total_count FROM inverted_index
+          WHERE word LIKE 'the' OR word LIKE'an'OR word LIKE 'he'
         """)
-        topTwoLocations.show(2)
+        
+        sqlAll.show(10, false)
   }
 }
