@@ -1,4 +1,4 @@
-package com.grzesiek.spark.book.exercises
+package com.practice
 import java.io.File
 import org.apache.spark.SparkContext
 import org.apache.log4j._
@@ -13,21 +13,24 @@ object WordsCountInvertIndexTest {
   val shakespeare = new File("../data/shakespeare")
   val sc = new SparkContext("local","WordsCountInvertIndex")
   val pathSeparator = File.separator
-  //   val filePaths = fileContent.keys.map(content => content.split(pathSeparator + pathSeparator).last)
-//   val filesContent = fileContent.values
-  val fileContent = sc.wholeTextFiles(shakespeare.toString).flatMap{content =>
-       val words =content._2.split("""\W+""")
-       val fileName = content._1.split("\\\\")
-       words.map(word => (word, 1))
+
+  val fileContent = sc.wholeTextFiles(shakespeare.toString).flatMap{
+      
+      case (location, "") => 
+          Array.empty[((String, String), Int)]
+      case (location, contents) =>
+          val words = contents.split("""\W+""")
+          val fileName = location.split("\\\\").last
+          words.map(word => ((word, fileName), 1))
+//          Pattern matching is eager. The first successful match in the order as written will win. If you reversed the order
+//here, the case (location, "") would never match and the compiler would throw an "unreachable code"
+//warning for it. czyli jesli pierwszy case wyszukla by nam wszystkie wartosci rowneiz te puste, drugi case
+// nic by nie znalazl          
      
-             
-    }
-//    .reduceByKey((total, value) => total + value)
-//    map { word_file_count_tup3 => (word_file_count_tup3._1._1, (word_file_count_tup3._1._2, word_file_count_tup3._2))}
+      }
     
     fileContent.foreach(println)
-    //println(reduceByKeyTest)
-//    println("===========================================================")
+
    
   }
 }
