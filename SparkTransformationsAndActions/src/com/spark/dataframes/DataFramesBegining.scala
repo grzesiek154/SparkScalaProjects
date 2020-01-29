@@ -1,4 +1,4 @@
-package com.spark.sql
+package com.spark.dataframes
 import org.apache.spark.SparkContext
 import scala.util.Random
 import org.apache.spark.sql.SparkSession
