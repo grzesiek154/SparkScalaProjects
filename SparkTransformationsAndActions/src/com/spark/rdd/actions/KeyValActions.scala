@@ -1,5 +1,5 @@
 
-package com.spark.actions
+package com.spark.rdd.actions
 
 import org.apache.spark._
 import org.apache.spark.SparkContext._

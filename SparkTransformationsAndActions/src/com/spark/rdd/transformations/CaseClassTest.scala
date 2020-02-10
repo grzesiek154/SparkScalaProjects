@@ -1,4 +1,4 @@
-package com.spark.transformations
+package com.spark.rdd.transformations
 
 import org.apache.spark.SparkContext
 

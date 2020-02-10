@@ -35,11 +35,14 @@ object ExerciseOne {
       
      
       
-     val yearCount = moviesAndYear.groupBy('_2).count().collect()// prawdopodobnie oblicza poprawnie ilosc filmow w danym roku
+     val yearCount = moviesAndYear.groupBy('_2).count()// prawdopodobnie oblicza poprawnie ilosc filmow w danym roku
                                                                  // zwrocona wartosc to row , trzeba to jakos polaczyc z konretym rokiem i stworzyc kolekcje dwoch elementow
-
-      val yearCount2 = yearCount.mkString(",")
+       
+      val yearCoundRenamed = yearCount.withColumnRenamed("_2", "Produce year").withColumnRenamed("count", "Amount of movies in particular year").orderBy($"Amount of movies in particular year".asc)                                                           
+                                                                
       
-      yearCount2.foreach(println)
+     
+      //yearCoundRenamed.show()
+      movies.show()
   }
 }
