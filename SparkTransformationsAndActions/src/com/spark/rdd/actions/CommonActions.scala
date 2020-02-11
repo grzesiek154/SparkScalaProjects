@@ -1,4 +1,4 @@
-package com.spark.actions
+package com.spark.rdd.actions
 
 import org.apache.log4j._
 import org.apache.spark.SparkContext

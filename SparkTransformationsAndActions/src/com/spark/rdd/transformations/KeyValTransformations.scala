@@ -1,4 +1,4 @@
-package com.spark.transformations
+package com.spark.rdd.transformations
 
 import org.apache.log4j._;
 import org.apache.spark.SparkContext;
