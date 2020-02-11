@@ -18,7 +18,7 @@ import org.apache.spark.sql.functions.max
 //approach is different than the other one. Why do you think that is?
 object ExerciseThree {
   
-  case class MovieRatings (rating:Long, movie_title:String, produced_year:Long)
+  case class MovieRatings (rating:String, movie_title:String, produced_year:String)
   
    def main(args: Array[String]) {
     
@@ -30,23 +30,28 @@ object ExerciseThree {
       .getOrCreate()
       import spark.implicits._
       
-       val movieRatingsSchema = StructType(Array(StructField("rating", LongType, true),
+       val movieRatingsSchema = StructType(Array(StructField("rating", StringType, true),
         StructField("movie_title", StringType, true),
-        StructField("produced_year", LongType, true)))
+        StructField("produced_year", StringType, true)))
       
       val movies = spark.read.option("delimiter", "\t").csv("../data/beginning-apache-spark-2-master/chapter3/data/movies/movies.tsv")
       val moviesRatings = spark.read.option("delimiter", "\t").schema(movieRatingsSchema).csv("../data/beginning-apache-spark-2-master/chapter3/data/movies/movie-ratings.tsv")
+
       val moviesRatingsColRenamed = moviesRatings.withColumnRenamed("_c0", "rating").withColumnRenamed("_c1", "movie_name").withColumnRenamed("_c2", "produce_year")
       
       
       //the highest rated movie per year
        val movieRatingsDS = moviesRatingsColRenamed.as[MovieRatings]
  
-       val highestRatedMovie = movieRatingsDS.select('produced_year, 'rating)
-       movieRatingsDS.show
-       highestRatedMovie.show()
-       moviesRatingsColRenamed.printSchema()
-       moviesRatings.printSchema()
+       val highestRatedMovie = movieRatingsDS.select('produced_year, 'rating).groupBy('produced_year).agg(max(movieRatingsDS.col("rating"))).orderBy('produced_year.desc)
+       val highestRatedMovie2 = movieRatingsDS.select('produced_year, 'rating).orderBy('produced_year.desc)
+//       moviesRatings.printSchema()
+//       moviesRatings.show()
+
+         highestRatedMovie.show()
+         highestRatedMovie2.show()
+//       moviesRatingsColRenamed.printSchema()
+//       moviesRatings.printSchema()
       
    }
   
