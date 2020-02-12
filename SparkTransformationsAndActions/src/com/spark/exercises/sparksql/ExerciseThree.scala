@@ -43,13 +43,15 @@ object ExerciseThree {
       //the highest rated movie per year
        val movieRatingsDS = moviesRatingsColRenamed.as[MovieRatings]
  
-       val highestRatedMovie = movieRatingsDS.select('produced_year, 'rating).groupBy('produced_year).agg(max(movieRatingsDS.col("rating"))).orderBy('produced_year.desc)
-       val highestRatedMovie2 = movieRatingsDS.select('produced_year, 'rating).orderBy('produced_year.desc)
+       //val highestRatedMovie = movieRatingsDS.select('produced_year, max('rating)).groupBy('produced_year.desc)
+       val highestRatedMovie =  moviesRatings.groupBy('produced_year).agg(max('rating)).orderBy('produced_year.desc)
+       val highestRatedMovie2 = movieRatingsDS.orderBy('produced_year.desc, 'rating.desc).take(1)
 //       moviesRatings.printSchema()
 //       moviesRatings.show()
 
-         highestRatedMovie.show()
+         
          highestRatedMovie2.show()
+         movieRatingsDS.show()
 //       moviesRatingsColRenamed.printSchema()
 //       moviesRatings.printSchema()
       
