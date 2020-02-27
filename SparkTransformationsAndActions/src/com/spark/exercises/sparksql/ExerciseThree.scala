@@ -50,7 +50,7 @@ object ExerciseThree {
 //       moviesRatings.show()
 
          
-         highestRatedMovie2.show()
+        // highestRatedMovie2.show()
          movieRatingsDS.show()
 //       moviesRatingsColRenamed.printSchema()
 //       moviesRatings.printSchema()
