@@ -26,25 +26,31 @@ object HighRatedMovieInYear_Join {
      val data = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movie-ratings.tsv")
      val data2 = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movies.tsv")   
      val ratingTitleYear = data.map(line => (line.split("\t")(0).toDouble, line.split("\t")(1), line.split("\t")(2).toInt))
-     val moviesAndActors = data2.map(line => (line.split("\t")(1), line.split("\t")(0), line.split("\t")(2)))
+     val moviesAndActors = data2.map(line => (line.split("\t")(1),( line.split("\t")(0), line.split("\t")(2))))
      
      // 1 Approach: figure out the highest-rated movie per year
      val dataReorder = ratingTitleYear.map(x => ( x._3, (x._2, x._1)))
      // solution description: tuple(val, tuple2), we are checking tuple2._2 value in tupel2 and comparing each other,
      // than we return tuple2 with the highest value on tuple2._2
-     val solutionOne = dataReorder.reduceByKey((total,value) => if (total._2 < value._2) value else total).sortByKey().collect()
+     val solutionOne = dataReorder.reduceByKey((total,value) => if (total._2 < value._2) value else total).sortByKey()
+     val highestRatedMoviesPerYear = solutionOne.map(value => (value._2._1, (value._1, value._2._2)))
    
      
      val orderedData = dataReorder.sortByKey().collect();
     
-     //val rddWihHighestRatedMovie = orderedData.map{case (,)}
     
+//      moviesAndActors.foreach(println)
+//      
+//      highestRatedMoviesPerYear.foreach(println)
     
-     //orderedData.foreach(println)
-   
-     //solutionOne.foreach(println)
-    
-      moviesAndActors.foreach(println)
+     def createActorsTuple (actor: String) ={
+       
+       val actorsList = List.apply(actor)
+     }
+      
+      val joinedRDDSolutionOne = highestRatedMoviesPerYear.join(moviesAndActors).reduceByKey((line) => createActorsTuple(line.))
+      
+      joinedRDDSolutionOne.foreach(println)
   
      
 
