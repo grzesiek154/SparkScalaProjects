@@ -16,6 +16,10 @@ import shapeless._0
 object HighRatedMovieInYear_Join {
   
 
+     def createActorsTuple (actor: String) ={
+       
+       val actorsList = List.apply(actor)
+     }
 
   
   def main(args: Array[String]) {
@@ -26,7 +30,7 @@ object HighRatedMovieInYear_Join {
      val data = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movie-ratings.tsv")
      val data2 = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movies.tsv")   
      val ratingTitleYear = data.map(line => (line.split("\t")(0).toDouble, line.split("\t")(1), line.split("\t")(2).toInt))
-     val moviesAndActors = data2.map(line => (line.split("\t")(1),( line.split("\t")(0), line.split("\t")(2))))
+     val moviesAndActors = data2.map(line => (line.split("\t")(1),( line.split("\t")(0), line.split("\t")(2).toInt)))
      
      // 1 Approach: figure out the highest-rated movie per year
      val dataReorder = ratingTitleYear.map(x => ( x._3, (x._2, x._1)))
@@ -39,18 +43,22 @@ object HighRatedMovieInYear_Join {
      val orderedData = dataReorder.sortByKey().collect();
     
     
-//      moviesAndActors.foreach(println)
+       // moviesAndActors.foreach(println)
 //      
-//      highestRatedMoviesPerYear.foreach(println)
+  //     highestRatedMoviesPerYear.foreach(println)
     
-     def createActorsTuple (actor: String) ={
-       
-       val actorsList = List.apply(actor)
+     val collectedActors = moviesAndActors.reduceByKey{
+       case ((actor, year), (actor2, year2)) => ((actor + actor2) , year)
      }
+     
+     
+     
       
-      val joinedRDDSolutionOne = highestRatedMoviesPerYear.join(moviesAndActors).reduceByKey((line) => createActorsTuple(line.))
+        val joinedRDDSolutionOne = highestRatedMoviesPerYear.join(collectedActors)
       
-      joinedRDDSolutionOne.foreach(println)
+        joinedRDDSolutionOne.take(20).foreach(println)
+        
+        //collectedActors.collect().foreach(println)
   
      
 
