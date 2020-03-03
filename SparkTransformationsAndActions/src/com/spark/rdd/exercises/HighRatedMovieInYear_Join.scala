@@ -16,6 +16,10 @@ import shapeless._0
 object HighRatedMovieInYear_Join {
   
 
+     def createActorsTuple (actor: String) ={
+       
+       val actorsList = List.apply(actor)
+     }
 
   
   def main(args: Array[String]) {
@@ -24,22 +28,38 @@ object HighRatedMovieInYear_Join {
      val sc = new SparkContext("local[*]","HighRatedMovieInYear_Join")
     
      val data = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movie-ratings.tsv")
-     val movies = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movies.tsv")   
+     val data2 = sc.textFile("../data/beginning-apache-spark-2-master/chapter3/data/movies/movies.tsv")   
      val ratingTitleYear = data.map(line => (line.split("\t")(0).toDouble, line.split("\t")(1), line.split("\t")(2).toInt))
+     val moviesAndActors = data2.map(line => (line.split("\t")(1),( line.split("\t")(0), line.split("\t")(2).toInt)))
      
      // 1 Approach: figure out the highest-rated movie per year
      val dataReorder = ratingTitleYear.map(x => ( x._3, (x._2, x._1)))
      // solution description: tuple(val, tuple2), we are checking tuple2._2 value in tupel2 and comparing each other,
      // than we return tuple2 with the highest value on tuple2._2
      val solutionOne = dataReorder.reduceByKey((total,value) => if (total._2 < value._2) value else total).sortByKey()
+     val highestRatedMoviesPerYear = solutionOne.map(value => (value._2._1, (value._1, value._2._2)))
    
      
      val orderedData = dataReorder.sortByKey().collect();
      val moviesWithActors = solutionOne.join(movies)
     
-     //orderedData.foreach(println)
-   
-     solutionOne.foreach(println)
+    
+       // moviesAndActors.foreach(println)
+//      
+  //     highestRatedMoviesPerYear.foreach(println)
+    
+     val collectedActors = moviesAndActors.reduceByKey{
+       case ((actor, year), (actor2, year2)) => ((actor + actor2) , year)
+     }
+     
+     
+     
+      
+        val joinedRDDSolutionOne = highestRatedMoviesPerYear.join(collectedActors)
+      
+        joinedRDDSolutionOne.take(20).foreach(println)
+        
+        //collectedActors.collect().foreach(println)
   
      
 
