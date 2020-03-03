@@ -31,11 +31,11 @@ object HighRatedMovieInYear_Join {
      val dataReorder = ratingTitleYear.map(x => ( x._3, (x._2, x._1)))
      // solution description: tuple(val, tuple2), we are checking tuple2._2 value in tupel2 and comparing each other,
      // than we return tuple2 with the highest value on tuple2._2
-     val solutionOne = dataReorder.reduceByKey((total,value) => if (total._2 < value._2) value else total).sortByKey().collect()
+     val solutionOne = dataReorder.reduceByKey((total,value) => if (total._2 < value._2) value else total).sortByKey()
    
      
      val orderedData = dataReorder.sortByKey().collect();
-    
+     val moviesWithActors = solutionOne.join(movies)
     
      //orderedData.foreach(println)
    
