@@ -60,13 +60,14 @@ object HighRatedMovieInYear_Join {
     val ratingTitleYear2 = ratingTitleYear.map(value => (value._2, (value._3, value._1)))
     val moviesAndActors2 = moviesAndActors.map(value => (value._1, (value._2._2, value._2._1)))
     //(value => (value._1,(value._2._1._1, value._2._1._2, value._2._2._2)))
+    // joining two rdds and reducing values base on movie title(nie jest to pelne rozwiazanie, poniewaz nalezalo by w tym przypadk przypisac aktorow do listy a pozniej rodukowac po nazwie filmu )
     val ratingAndActors = ratingTitleYear2.join(moviesAndActors2).reduceByKey{
-       case (((yearTotal, ratingTotal), (year, actorTotal)), ((year2, rating), (year3, actor))) => if (ratingTotal < rating) ((yearTotal, rating),(yearTotal, actor)) 
+       case (((yearTotal, ratingTotal), actorTotal), ((year2, rating), (year3, actor))) => if (ratingTotal < rating) ((yearTotal, rating),(yearTotal, actor)) 
        else ((yearTotal, ratingTotal),(yearTotal, actor))
      }
     
     ratingAndActors.sortByKey().foreach(println)
-     //ratingTitleYear2.foreach(println)
+   
     
   }
 }

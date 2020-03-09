@@ -1,0 +1,11 @@
+similar to map(func), the func should return a
+collection rather than a single element, and this method
+will flatten out the returned collection. this allows an input
+item to map to zero or more output items
+
+When to use flatMap:
+
+- You’re using map (or a for/yield expression) to create a new collection from an
+existing collection.
+- The resulting collection is a list of lists.
+- You call flatten immediately after map (or a for/yield expression)

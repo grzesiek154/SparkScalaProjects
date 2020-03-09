@@ -1,0 +1,5 @@
+
+
+The -> operator is a shorthand for associating a key with a value when used in the context of a map. In some languages, you are simply allowed to pass the pair of the key and value (usually with the key in the first position and the value in the second) to the constructor or one of the various methods on a map and it will be handled appropriately -- this is also allowed with Scala maps.
+
+However, Scala also provides the shorthand form of key -> value, which, as you've discovered, is defined in Predef via an implicit, to make the association more clear. Essentially it's saying: "take the item on the left and map it to the item on the right." You'll notice if you read the definition of the Map object, that it does not define any methods that obviously use this -> method. Instead, the methods take objects of type Tuple2 (this is a tuple of 2 values: e.g. (item1, item2)), which Scala implicity converts via the method in Predef.
