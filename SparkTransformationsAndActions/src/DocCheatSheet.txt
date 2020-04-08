@@ -1,0 +1,1 @@
+function line size() is taken from org.apache.spark.sql.functions

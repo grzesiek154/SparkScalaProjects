@@ -180,6 +180,9 @@
 	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/pyrolite-4.13.jar"/>
 	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/RoaringBitmap-0.7.45.jar"/>
 	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/scala-compiler-2.11.8.jar"/>
+	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/scalafx_2.10-12.0.2-R18-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/scalafxml-core-sfx8_2.12-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/scalafxml-core-sfx8_2.12-0.5-sources.jar"/>
 	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/scala-library-2.11.8.jar"/>
 	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/scalap-2.11.8.jar"/>
 	<classpathentry kind="lib" path="C:/moje/BigDataScala/spark/jars/scala-parser-combinators_2.11-1.0.4.jar"/>

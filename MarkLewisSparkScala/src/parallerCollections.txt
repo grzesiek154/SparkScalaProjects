@@ -1,0 +1,31 @@
+Parallel collections operate parallel on data, oposite to "ordinary" collections which works sequential (the elements must be accessed one after the other.)
+  
+  
+  // parallel collections asings values to different threads, threads that get smaller number tend to count and print values faster
+    var i2 = 0
+  for(j <- (1 to 1000000).par) i2 += 1
+  println(i2)
+  // the resoult can be different each time because system load i2 from memory add 1 to register and store i2 to memory, but each thread can load i2 from memory before another add 1 to register
+  //
+  
+While the parallel collections abstraction feels very much the same as normal sequential collections, it’s important to note that its semantics differs, especially with regards to side-effects and non-associative operations.
+
+In order to see how this is the case, first, we visualize how operations are performed in parallel. Conceptually, Scala’s parallel collections framework parallelizes an operation on a parallel collection by recursively “splitting” a given collection, applying an operation on each partition of the collection in parallel, and re-“combining” all of the results that were completed in parallel.
+
+These concurrent, and “out-of-order” semantics of parallel collections lead to the following two implications:
+
+    1.Side-effecting operations can lead to non-determinism
+    2.Non-associative operations lead to non-determinism
+    
+    
+Side-Effecting Operations
+
+Given the concurrent execution semantics of the parallel collections framework, operations performed on a collection which cause side-effects should generally be avoided, in order to maintain determinism. A simple example is by using an accessor method, like foreach to increment a var declared outside of the closure which is passed to foreach.
+
+
+Non-Associative Operations
+
+Given this “out-of-order” semantics, also must be careful to perform only associative operations in order to avoid non-determinism. That is, given a parallel collection, pcoll, one should be sure that when invoking a higher-order function on pcoll, such as pcoll.reduce(func), the order in which func is applied to the elements of pcoll can be arbitrary
+  
+  
+ https://docs.scala-lang.org/overviews/parallel-collections/overview.html

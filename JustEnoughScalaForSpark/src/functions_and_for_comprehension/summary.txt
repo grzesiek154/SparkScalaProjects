@@ -1,0 +1,26 @@
+
+- Think of the => symbol as a transformer. It transforms the input data on its left side
+to some new output data, using the algorithm on its right side.
+• Use def to define a method, val, to create a function.
+• When assigning a function to a variable, a function literal is the code on the right
+side of the expression.
+• A function value is an object, and extends the FunctionN traits in the main scala
+package, such as Function0 for a function that takes no parameters.
+
+CLOSURE:
+“In computer science, a closure (also lexical closure or function closure) is a function
+together with a referencing environment for the non-local variables of that function. A
+closure allows a function to access variables outside its immediate lexical scope.
+
+In his excellent article, Closures in Ruby, Paul Cantrell states, “a closure is a block of
+code which meets three criteria.” He defines the criteria as follows:
+
+1. The block of code can be passed around as a value, and
+2. It can be executed on demand by anyone who has that value, at which time
+3. It can refer to variables from the context in which it was created (i.e., it is closed
+with respect to variable access, in the mathematical sense of the word “closed”)
+
+As shown in the Solution, to create a closure in Scala, just define a function that refers
+to a variable that’s in the same scope as its declaration. That function can be used later,
+even when the variable is no longer in the function’s current scope, such as when the
+function is passed to another class, method, or function.

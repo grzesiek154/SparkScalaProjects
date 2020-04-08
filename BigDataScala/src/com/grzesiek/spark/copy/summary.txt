@@ -1,0 +1,13 @@
+"type"
+Yes, the type alias FunctorType is just a shorthand for
+
+(LocalDate, HolidayCalendar, Int, Boolean) => LocalDate
+
+Type aliases are often used to keep the rest of the code simple: you can now write
+
+def doSomeThing(f: FunctorType)
+
+which will be interpreted by the compiler as
+
+def doSomeThing(f: (LocalDate, HolidayCalendar, Int, Boolean) => LocalDate)
+https://stackoverflow.com/questions/19492542/understanding-what-type-keyword-does-in-scala

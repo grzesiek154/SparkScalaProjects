@@ -1,117 +1,111 @@
-2019-11-21 10:01:15,186 ERROR [main] - Statistics - Statistics file `/home/grzesiek/.scalaide/statistics` is corrupted. A new one is being created. Corrupted content was:
-
-com.cedarsoftware.util.io.JsonIoException: error parsing JSON value
-	at com.cedarsoftware.util.io.JsonReader.readObject(JsonReader.java:529)
-	at com.cedarsoftware.util.io.JsonReader.jsonToJava(JsonReader.java:289)
-	at com.cedarsoftware.util.io.JsonReader.jsonToJava(JsonReader.java:262)
-	at org.scalaide.core.internal.statistics.Statistics.read(Statistics.scala:74)
-	at org.scalaide.core.internal.statistics.Statistics.$anonfun$readStats$1(Statistics.scala:52)
-	at org.scalaide.core.internal.statistics.Statistics.$anonfun$readStats$1$adapted(Statistics.scala:51)
-	at org.scalaide.core.ScalaIdeDataStore$.$anonfun$validate$2(ScalaIdeDataStore.scala:59)
-	at org.scalaide.util.eclipse.EclipseUtils$$anon$3.run(EclipseUtils.scala:230)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.scalaide.util.eclipse.EclipseUtils$.withSafeRunner(EclipseUtils.scala:226)
-	at org.scalaide.core.ScalaIdeDataStore$.validate(ScalaIdeDataStore.scala:59)
-	at org.scalaide.core.internal.statistics.Statistics.readStats(Statistics.scala:51)
-	at org.scalaide.core.internal.statistics.Statistics.<init>(Statistics.scala:30)
-	at org.scalaide.core.internal.ScalaPlugin.stats$lzycompute(ScalaPlugin.scala:135)
-	at org.scalaide.core.internal.ScalaPlugin.stats(ScalaPlugin.scala:135)
-	at org.scalaide.core.internal.ScalaPlugin.statistics(ScalaPlugin.scala:138)
-	at org.scalaide.core.internal.ScalaPlugin.start(ScalaPlugin.scala:109)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:933)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
-	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
-	at org.eclipse.osgi.container.Module.start(Module.java:449)
-	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
-	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
-	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:446)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
-	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
-	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
-	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
-	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
-	at org.eclipse.ui.internal.registry.PerspectiveDescriptor.createFactory(PerspectiveDescriptor.java:75)
-	at org.eclipse.ui.internal.WorkbenchPage.createPerspective(WorkbenchPage.java:4172)
-	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:4081)
-	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:744)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:990)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:124)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:91)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:73)
-	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1494)
-	at org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1468)
-	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.updateActiveShell(WorkbenchSourceProvider.java:907)
-	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.getCurrentState(WorkbenchSourceProvider.java:115)
-	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.lambda$2(WorkbenchSourceProvider.java:668)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1577)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1347)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1353)
-	at org.eclipse.swt.widgets.Shell.gtk_focus_in_event(Shell.java:1399)
-	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1974)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
-	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
-	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
-	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
-	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
-	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
-Caused by: com.cedarsoftware.util.io.JsonIoException: EOF reached prematurely
-	at com.cedarsoftware.util.io.JsonParser.error(JsonParser.java:584)
-	at com.cedarsoftware.util.io.JsonParser.readValue(JsonParser.java:278)
-	at com.cedarsoftware.util.io.JsonReader.readObject(JsonReader.java:521)
-	... 95 more
-2019-11-21 10:02:54,067  WARN [main] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:02:54,069  WARN [main] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:02:54,071 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:54,075 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:56,133  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:02:56,134  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:02:56,134 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:56,135 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:56,998 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
+2020-03-22 17:19:45,524  WARN [Worker-3] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-22 17:19:45,526  WARN [Worker-3] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-22 17:19:45,798  WARN [Worker-3] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-22 17:19:45,798  WARN [Worker-3] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-22 17:19:45,815  WARN [Worker-0] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-22 17:19:45,816  WARN [Worker-0] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-22 17:19:46,179  WARN [Worker-6] - ScalaProject - Project MySparkProjects has platform default sourceLevel.
+2020-03-22 17:19:46,179  WARN [Worker-6] - ScalaProject - Project MySparkProjects runs on platform default installation.
+2020-03-22 17:19:46,604  WARN [Worker-8] - ScalaProject - Project MarkLewisSparkScala has platform default sourceLevel.
+2020-03-22 17:19:46,604  WARN [Worker-8] - ScalaProject - Project MarkLewisSparkScala runs on platform default installation.
+2020-03-22 17:19:51,068 ERROR [Worker-8] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-22 17:19:51,068 ERROR [Worker-8] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-22 17:19:58,084  WARN [Worker-9] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-22 17:19:58,084  WARN [Worker-9] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-22 17:29:32,193  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-22 17:29:32,194  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-22 17:29:34,962 ERROR [Worker-4] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-22 17:29:34,963 ERROR [Worker-4] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-22 17:33:47,288  WARN [ModalContext] - ScalaProject - Project TestProject has platform default sourceLevel.
+2020-03-22 17:33:47,288  WARN [ModalContext] - ScalaProject - Project TestProject runs on platform default installation.
+2020-03-22 17:33:47,720  WARN [Worker-0] - ScalaProject - Project TestProject has platform default sourceLevel.
+2020-03-22 17:33:47,720  WARN [Worker-0] - ScalaProject - Project TestProject runs on platform default installation.
+2020-03-22 17:34:36,382  WARN [Worker-9] - ScalaProject - Project TestProject has platform default sourceLevel.
+2020-03-22 17:34:36,382  WARN [Worker-9] - ScalaProject - Project TestProject runs on platform default installation.
+2020-03-22 17:35:00,984  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for TestProject, setting default to 2.12.
+2020-03-22 17:38:47,606  WARN [ModalContext] - ScalaProject - Project MySparkProjects has platform default sourceLevel.
+2020-03-22 17:38:47,606  WARN [ModalContext] - ScalaProject - Project MySparkProjects runs on platform default installation.
+2020-03-22 17:38:47,806  WARN [ModalContext] - ScalaProject - Project MySparkProjects has platform default sourceLevel.
+2020-03-22 17:38:47,806  WARN [ModalContext] - ScalaProject - Project MySparkProjects runs on platform default installation.
+2020-03-22 17:38:59,838  WARN [ModalContext] - ScalaProject - Project TestProject has platform default sourceLevel.
+2020-03-22 17:38:59,838  WARN [ModalContext] - ScalaProject - Project TestProject runs on platform default installation.
+2020-03-22 17:39:00,026  WARN [ModalContext] - ScalaProject - Project TestProject has platform default sourceLevel.
+2020-03-22 17:39:00,026  WARN [ModalContext] - ScalaProject - Project TestProject runs on platform default installation.
+2020-03-22 17:39:57,561  WARN [ModalContext] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:39:57,561  WARN [ModalContext] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:39:57,794  WARN [Worker-11] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:39:57,794  WARN [Worker-11] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:40:16,837  WARN [Worker-8] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:40:16,837  WARN [Worker-8] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:40:24,164  WARN [main] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:40:24,164  WARN [main] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:40:30,607  WARN [main] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:40:30,608  WARN [main] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:40:30,749  WARN [Worker-3] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:40:30,749  WARN [Worker-3] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:41:36,340  WARN [Worker-4] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:41:36,340  WARN [Worker-4] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:41:49,948  WARN [main] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:41:49,948  WARN [main] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:41:50,153  WARN [Worker-5] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:41:50,153  WARN [Worker-5] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:42:04,085  WARN [Worker-10] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:42:04,085  WARN [Worker-10] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:42:31,355  WARN [Worker-12] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:42:31,355  WARN [Worker-12] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:42:35,471  WARN [Worker-8] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:42:35,471  WARN [Worker-8] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:42:42,173  WARN [Worker-3] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:42:42,173  WARN [Worker-3] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:42:57,325  WARN [Worker-2] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:42:57,325  WARN [Worker-2] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:43:10,905  WARN [Worker-12] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:43:10,905  WARN [Worker-12] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:43:11,311 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-22 17:43:11,311 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-22 17:43:11,311 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-22 17:43:38,344  WARN [Worker-2] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:43:38,344  WARN [Worker-2] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-22 17:43:38,979  WARN [Worker-9] - ScalaProject - Project MyScalaProjects has platform default sourceLevel.
+2020-03-22 17:43:38,979  WARN [Worker-9] - ScalaProject - Project MyScalaProjects runs on platform default installation.
+2020-03-23 20:07:12,437  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-23 20:07:12,439  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-23 20:07:14,559 ERROR [Worker-4] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-23 20:07:14,560 ERROR [Worker-4] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-24 13:41:10,998  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-24 13:41:11,000  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-24 13:41:13,691 ERROR [Worker-5] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-24 13:41:13,692 ERROR [Worker-5] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-24 19:19:45,787  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-24 19:19:45,790  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-24 19:19:52,675 ERROR [Worker-5] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-24 19:19:52,677 ERROR [Worker-5] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-26 19:13:52,672  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-26 19:13:52,674  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-26 19:13:55,223 ERROR [Worker-2] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-26 19:13:55,225 ERROR [Worker-2] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-28 13:35:49,654  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-28 13:35:49,654  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-28 13:35:52,666 ERROR [Worker-4] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-28 13:35:52,666 ERROR [Worker-4] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-30 12:50:32,578  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-30 12:50:32,582  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-30 12:50:34,435 ERROR [Worker-2] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-30 12:50:34,437 ERROR [Worker-2] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-30 13:05:11,150  WARN [Worker-2] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-30 13:05:11,150  WARN [Worker-2] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-30 13:05:11,158  WARN [Worker-2] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-30 13:05:11,158  WARN [Worker-2] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-30 14:16:16,196  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-03-30 14:16:16,198  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-03-30 14:16:18,845 ERROR [Worker-5] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-03-30 14:16:18,845 ERROR [Worker-5] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-03-30 14:20:08,825  WARN [main] - ScalaProject - Project BigDataAnalyticswithSpark has platform default sourceLevel.
+2020-03-30 14:20:08,825  WARN [main] - ScalaProject - Project BigDataAnalyticswithSpark runs on platform default installation.
+2020-03-30 14:20:08,826 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [BigDataAnalyticswithSpark does not exist]
+2020-03-30 14:20:08,826 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [BigDataAnalyticswithSpark does not exist]
+2020-03-30 14:20:09,157 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
+Java Model Exception: Java Model Status [BigDataAnalyticswithSpark does not exist]
 	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
 	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
 	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
@@ -185,7 +179,7 @@ Java Model Exception: Java Model Status [SparkTransformations does not exist]
 	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5455)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
 	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
 	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
 	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
@@ -233,10 +227,10 @@ Java Model Exception: Java Model Status [SparkTransformations does not exist]
 	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:268)
 	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:308)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4522)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4107)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
@@ -258,519 +252,12 @@ Java Model Exception: Java Model Status [SparkTransformations does not exist]
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
-2019-11-21 10:02:57,080 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.initialReconcile(ScalaOutlineReconcilingStrategy.scala:27)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:119)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
-2019-11-21 10:02:57,296  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:02:57,296  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:02:57,297 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:57,297 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:57,304 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:02:57,812  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:02:57,813  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:02:57,813 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:57,814 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:02:57,820 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:03:19,875  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:03:19,875  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:03:19,875 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:19,875 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:19,882 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:03:20,384  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:03:20,384  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:03:20,384 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:20,384 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:20,387 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:03:39,457  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:03:39,457  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:03:39,458 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:39,458 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:39,460 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:03:39,970  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:03:39,970  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:03:39,970 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:39,970 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:39,972 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:03:53,503  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:03:53,503  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:03:53,505 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:53,508 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:53,511 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:03:54,033  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:03:54,034  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:03:54,034 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:54,034 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:03:54,036 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:04:04,077  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:04:04,077  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:04:04,078 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:04,078 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:04,083 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:04:04,602  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:04:04,602  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:04:04,603 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:04,603 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:04,608 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:04:37,027 ERROR [main] - Statistics - Statistics file `/home/grzesiek/.scalaide/statistics` is corrupted. A new one is being created. Corrupted content was:
-
-com.cedarsoftware.util.io.JsonIoException: error parsing JSON value
-	at com.cedarsoftware.util.io.JsonReader.readObject(JsonReader.java:529)
-	at com.cedarsoftware.util.io.JsonReader.jsonToJava(JsonReader.java:289)
-	at com.cedarsoftware.util.io.JsonReader.jsonToJava(JsonReader.java:262)
-	at org.scalaide.core.internal.statistics.Statistics.read(Statistics.scala:74)
-	at org.scalaide.core.internal.statistics.Statistics.$anonfun$readStats$1(Statistics.scala:52)
-	at org.scalaide.core.internal.statistics.Statistics.$anonfun$readStats$1$adapted(Statistics.scala:51)
-	at org.scalaide.core.ScalaIdeDataStore$.$anonfun$validate$2(ScalaIdeDataStore.scala:59)
-	at org.scalaide.util.eclipse.EclipseUtils$$anon$3.run(EclipseUtils.scala:230)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.scalaide.util.eclipse.EclipseUtils$.withSafeRunner(EclipseUtils.scala:226)
-	at org.scalaide.core.ScalaIdeDataStore$.validate(ScalaIdeDataStore.scala:59)
-	at org.scalaide.core.internal.statistics.Statistics.readStats(Statistics.scala:51)
-	at org.scalaide.core.internal.statistics.Statistics.<init>(Statistics.scala:30)
-	at org.scalaide.core.internal.ScalaPlugin.stats$lzycompute(ScalaPlugin.scala:135)
-	at org.scalaide.core.internal.ScalaPlugin.stats(ScalaPlugin.scala:135)
-	at org.scalaide.core.internal.ScalaPlugin.statistics(ScalaPlugin.scala:138)
-	at org.scalaide.core.internal.ScalaPlugin.start(ScalaPlugin.scala:109)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:933)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
-	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
-	at org.eclipse.osgi.container.Module.start(Module.java:449)
-	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
-	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
-	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:446)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
-	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
-	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
-	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
-	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
-	at org.eclipse.jdt.internal.ui.filters.FilterDescriptor$1.run(FilterDescriptor.java:135)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.jdt.internal.ui.filters.FilterDescriptor.createViewerFilter(FilterDescriptor.java:139)
-	at org.eclipse.jdt.ui.actions.CustomFiltersActionGroup$FilterItem.getFilterInstance(CustomFiltersActionGroup.java:187)
-	at org.eclipse.jdt.ui.actions.CustomFiltersActionGroup.updateViewerFilters(CustomFiltersActionGroup.java:517)
-	at org.eclipse.jdt.ui.actions.CustomFiltersActionGroup.<init>(CustomFiltersActionGroup.java:275)
-	at org.eclipse.jdt.ui.actions.CustomFiltersActionGroup.<init>(CustomFiltersActionGroup.java:241)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.<init>(PackageExplorerActionGroup.java:149)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart.makeActions(PackageExplorerPart.java:800)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart.createPartControl(PackageExplorerPart.java:506)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:147)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:355)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:990)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:955)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:124)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:399)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:318)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:992)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:661)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:546)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:530)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:70)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:992)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:661)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1293)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:97)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:679)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:137)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:97)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:679)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:137)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:704)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1076)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
-Caused by: com.cedarsoftware.util.io.JsonIoException: EOF reached prematurely
-	at com.cedarsoftware.util.io.JsonParser.error(JsonParser.java:584)
-	at com.cedarsoftware.util.io.JsonParser.readValue(JsonParser.java:278)
-	at com.cedarsoftware.util.io.JsonReader.readObject(JsonReader.java:521)
-	... 152 more
-2019-11-21 10:04:38,341  WARN [main] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:04:38,342  WARN [main] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:04:38,343 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:38,346 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:42,501  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:04:42,517  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:04:42,517 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:42,517 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:43,031  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:04:43,036  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:04:43,036 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:43,037 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:43,290 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
+2020-03-30 14:20:19,617  WARN [main] - ScalaProject - Project BigDataAnalyticswithSpark has platform default sourceLevel.
+2020-03-30 14:20:19,618  WARN [main] - ScalaProject - Project BigDataAnalyticswithSpark runs on platform default installation.
+2020-03-30 14:20:19,618 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [BigDataAnalyticswithSpark does not exist]
+2020-03-30 14:20:19,618 ERROR [main] - ScalaProject - Java Model Exception: Java Model Status [BigDataAnalyticswithSpark does not exist]
+2020-03-30 14:20:19,821 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
+Java Model Exception: Java Model Status [BigDataAnalyticswithSpark does not exist]
 	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
 	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
 	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
@@ -809,7 +296,11 @@ Java Model Exception: Java Model Status [SparkTransformations does not exist]
 	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2530)
 	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1417)
 	at org.eclipse.ui.texteditor.AbstractTextEditor$5.run(AbstractTextEditor.java:3154)
-	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2137)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
+	at org.eclipse.ui.internal.WorkbenchWindow$14.run(WorkbenchWindow.java:2195)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2191)
 	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3172)
 	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3197)
 	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:362)
@@ -836,85 +327,63 @@ Java Model Exception: Java Model Status [SparkTransformations does not exist]
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1293)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:97)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:679)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:104)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:620)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:584)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:769)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1188)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3261)
+	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3107)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:563)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:518)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:360)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:167)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:256)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:221)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:271)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:249)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:379)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:540)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:46)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:851)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:546)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:530)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:70)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:992)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:661)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:137)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:137)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:137)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:97)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:679)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:137)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:704)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1076)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:848)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1163)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:273)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:268)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:308)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
@@ -935,389 +404,53 @@ Java Model Exception: Java Model Status [SparkTransformations does not exist]
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
-2019-11-21 10:04:43,520 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:04:43,524 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:04:43,547  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:04:43,547  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:04:43,548 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:43,548 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:43,562 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:04:44,067  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:04:44,074  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:04:44,074 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:44,074 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:04:44,077 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:20,134  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:20,134  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:20,134 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:20,134 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:20,140 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:20,641  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:20,641  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:20,641 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:20,641 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:20,643 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:29,168  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:29,168  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:29,169 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:29,170 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:29,176 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:29,716  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:29,716  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:29,717 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:29,717 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:29,752 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:34,744  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:34,745  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:34,749 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:34,749 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:34,757 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:35,278  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:35,278  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:35,278 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:35,278 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:35,281 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:44,293  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:44,293  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:44,294 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:44,294 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:44,330 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-21 10:05:44,803  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations has platform default sourceLevel.
-2019-11-21 10:05:44,803  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project SparkTransformations runs on platform default installation.
-2019-11-21 10:05:44,804 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:44,804 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Java Model Exception: Java Model Status [SparkTransformations does not exist]
-2019-11-21 10:05:44,806 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
-Java Model Exception: Java Model Status [SparkTransformations does not exist]
-	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
-	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2451)
-	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1903)
-	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1925)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths(ClasspathManagement.scala:149)
-	at org.scalaide.core.internal.project.ClasspathManagement.jdkPaths$(ClasspathManagement.scala:148)
-	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath(ClasspathManagement.scala:136)
-	at org.scalaide.core.internal.project.ClasspathManagement.scalaClasspath$(ClasspathManagement.scala:135)
-	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:150)
-	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:498)
-	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:485)
-	at org.scalaide.core.internal.project.ScalaProject.prepareCompilerSettings(ScalaProject.scala:438)
-	at org.scalaide.core.internal.project.ScalaProject.$anonfun$presentationCompiler$1(ScalaProject.scala:162)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:154)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:153)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:118)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:80)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
-	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.updateOutlineView(ScalaOutlineReconcilingStrategy.scala:34)
-	at org.scalaide.ui.internal.editor.outline.ScalaOutlineReconcilingStrategy.reconcile(ScalaOutlineReconcilingStrategy.scala:19)
-	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:77)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:69)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-2019-11-22 09:54:00,355 ERROR [main] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
-2019-11-22 09:54:00,356 ERROR [main] - System.err - log4j:WARN Please initialize the log4j system properly.
-2019-11-22 09:54:32,246 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:32,307 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:32,439 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:32,666 ERROR [Worker-12] - ProjectIndexJob - org.scala.tools.eclipse.search.indexing.OccurrenceCollector$InvalidPresentationCompilerException: Couldn't get source file for src/com/grzesiek/spark/PopularMovies.scala
-2019-11-22 09:54:32,828 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:32,883 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:32,997 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,077 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,142 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,191 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,218 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,256 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,676 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,729 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,736 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,802 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,834 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:33,978 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
-2019-11-22 09:54:34,172 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala in compiler mirror not found.
+2020-03-30 17:56:00,420  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 152
+2020-03-30 17:56:00,422  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 152
+2020-03-30 17:56:02,449  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 151
+2020-03-30 17:56:02,449  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 151
+2020-03-30 17:56:03,464  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 163
+2020-03-30 17:56:03,464  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 163
+2020-03-30 18:12:54,209 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,209 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,209 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,209 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,209 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,209 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,210 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,210 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,210 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,210 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-03-30 18:12:54,210 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-04-01 15:31:57,390  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-01 15:31:57,394  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-04-01 15:32:01,383 ERROR [Worker-5] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-04-01 15:32:01,385 ERROR [Worker-5] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-04-02 08:53:22,503  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-02 08:53:22,503  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-04-02 08:53:24,409 ERROR [Worker-5] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-04-02 08:53:24,409 ERROR [Worker-5] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-04-03 12:51:45,569  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2020-04-03 12:51:45,569  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2020-04-03 14:25:43,162  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:25:43,164  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:25:45,755  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:25:45,755  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:25:52,923  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:26:01,155  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:26:02,185  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:26:07,773  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-03 14:26:10,313  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 399
+2020-04-04 15:07:31,436 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-04-04 15:07:31,439 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-04-04 15:07:31,439 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-04-04 16:06:03,884 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-04-04 16:06:03,889 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-04-04 16:18:54,924 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2020-04-05 19:00:35,815  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-05 19:00:35,819  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-04-05 19:00:37,750 ERROR [Worker-4] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-04-05 19:00:37,750 ERROR [Worker-4] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-04-06 11:20:43,078  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-06 11:20:43,078  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-04-06 11:20:44,858 ERROR [Worker-4] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-04-06 11:20:44,858 ERROR [Worker-4] - System.err - log4j:WARN Please initialize the log4j system properly.

@@ -1,0 +1,1 @@
+Hence, from the comparison between Spark map() vs flatMap(), it is clear that Spark map function expresses a one-to-one transformation. It transforms each element of a collection into one element of the resulting collection. While Spark flatMap function expresses a one-to-many transformation. It transforms each element to 0 or more elements.

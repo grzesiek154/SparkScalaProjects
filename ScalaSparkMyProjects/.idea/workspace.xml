@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90a5ae7d-58b2-4cb0-bc9a-86ec4194705f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZUahTZb8ilO5pdeRiDRuOpTRSi" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="C:/Projects" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.JoinsAndGroupingPlayground">
+    <configuration name="DataFramesTransformations" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DataFramesTransformations" />
+      <module name="ScalaSparkMyProjects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise3" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Exercises.Exercise3" />
+      <module name="ScalaSparkMyProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JoinsAndGroupingPlayground" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="JoinsAndGroupingPlayground" />
+      <module name="ScalaSparkMyProjects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RddPlayground" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="RddPlayground" />
+      <module name="ScalaSparkMyProjects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaysOfRemovingHeaders" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="data_filtering.WaysOfRemovingHeaders" />
+      <module name="ScalaSparkMyProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_filtering.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DataFramesTransformations" />
+      <item itemvalue="Application.Exercise3" />
+      <item itemvalue="Application.RddPlayground" />
+      <item itemvalue="Application.JoinsAndGroupingPlayground" />
+      <item itemvalue="Application.WaysOfRemovingHeaders" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JoinsAndGroupingPlayground" />
+        <item itemvalue="Application.WaysOfRemovingHeaders" />
+        <item itemvalue="Application.RddPlayground" />
+        <item itemvalue="Application.Exercise3" />
+        <item itemvalue="Application.DataFramesTransformations" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="ScalaSparkMyProjects" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="scalasparkmyprojects [file:/C:/moje/BigDataScala/projects/ScalaSparkMyProjects/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="ScalaSparkMyProjects-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3170301982267" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3875184848" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1244562550" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90a5ae7d-58b2-4cb0-bc9a-86ec4194705f" name="Default Changelist" comment="" />
+      <created>1584896245779</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584896245779</updated>
+    </task>
+    <servers />
+  </component>
+</project>

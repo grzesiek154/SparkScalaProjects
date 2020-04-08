@@ -1,0 +1,15 @@
+Reduve vs FoldLeft
+https://stackoverflow.com/questions/25158780/difference-between-reduce-and-foldleft-fold-in-functional-programming-particula
+
+reduce kumulacja jest wykonywana rownolegle
+fold kumulacja wykonywana jest za pomoca seri agregacji
+
+reduce should be given a commutative monoid, i.e. an operation that is both commutative and associative. This means the operation can be parallelized.
+
+This distinction is very important for Big Data / MPP / distributed computing, and the entire reason why reduce even exists. The collection can be chopped up and the reduce can operate on each chunk, then the reduce can operate on the results of each chunk - in fact the level of chunking need not stop one level deep. We could chop up each chunk too. This is why summing integers in a list is O(log N) if given an infinite number of CPUs.
+
+If you just look at the signatures there is no reason for reduce to exist because you can achieve everything you can with reduce with a foldLeft. The functionality of foldLeft is a greater than the functionality of reduce.
+
+But you cannot parallelize a foldLeft, so its runtime is always O(N) (even if you feed in a commutative monoid). This is because it's assumed the operation is not a commutative monoid and so the cumulated value will be computed by a series of sequential aggregations. 
+
+The fold operations let you have a result with a different type than what the collection contains. The reduce methods don't have this flexibility. If the result you want has the same type as the collection contents, then reduce operations are typically easier and more straightforward. However, if you want a result of a different type, then you really need to use the fold operations.

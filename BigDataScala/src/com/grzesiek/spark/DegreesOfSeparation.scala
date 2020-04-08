@@ -21,6 +21,7 @@ object DegreesOfSeparation {
   
   // Some custom data types 
   // BFSData contains an array of hero ID connections, the distance, and color.
+  
   type BFSData = (Array[Int], Int, String)
   // A BFSNode has a heroID and the BFSData associated with it.
   type BFSNode = (Int, BFSData)
