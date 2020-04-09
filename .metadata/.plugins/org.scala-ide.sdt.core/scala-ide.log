@@ -454,3 +454,15 @@ Java Model Exception: Java Model Status [BigDataAnalyticswithSpark does not exis
 2020-04-06 11:20:43,078  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
 2020-04-06 11:20:44,858 ERROR [Worker-4] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
 2020-04-06 11:20:44,858 ERROR [Worker-4] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-04-08 11:28:06,843  WARN [main] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-08 11:28:06,846  WARN [main] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-04-08 11:28:09,279 ERROR [Worker-5] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-04-08 11:28:09,281 ERROR [Worker-5] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-04-08 11:36:50,741  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-08 11:36:50,742  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-04-09 10:09:24,531  WARN [Worker-3] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-09 10:09:24,538  WARN [Worker-3] - ScalaProject - Project LearningScala runs on platform default installation.
+2020-04-09 10:09:24,565 ERROR [Worker-1] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2020-04-09 10:09:24,566 ERROR [Worker-1] - System.err - log4j:WARN Please initialize the log4j system properly.
+2020-04-09 10:09:34,364  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project LearningScala has platform default sourceLevel.
+2020-04-09 10:09:34,365  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project LearningScala runs on platform default installation.

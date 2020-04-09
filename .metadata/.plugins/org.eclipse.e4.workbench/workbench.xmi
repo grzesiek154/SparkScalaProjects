@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ansToHgCEequP6tmTEomOA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_ansToXgCEequP6tmTEomOA" bindingContexts="_antjengCEequP6tmTEomOA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;DifferentWaysOfCreatingDatasets.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/datasets/DifferentWaysOfCreatingDatasets.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/datasets/DifferentWaysOfCreatingDatasets.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;RDDTempData.scala&quot; tooltip=&quot;MarkLewisSparkScala/src/rdd/RDDTempData.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MarkLewisSparkScala/src/rdd/RDDTempData.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;LeftAndRightOuterJoin.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/LeftAndRightOuterJoin.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/LeftAndRightOuterJoin.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;DealingWithDuplicatedColumnNames.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/DealingWithDuplicatedColumnNames.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/DealingWithDuplicatedColumnNames.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;CreatingDataFrameFromRdd.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/dataframes/CreatingDataFrameFromRdd.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/dataframes/CreatingDataFrameFromRdd.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;MultipleAggPerGroup.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/MultipleAggPerGroup.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/MultipleAggPerGroup.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;GroupingWithAgg.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/GroupingWithAgg.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/GroupingWithAgg.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;CollectionGroupValues.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/CollectionGroupValues.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/CollectionGroupValues.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;AggregationWithPivoting.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/AggregationWithPivoting.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/AggregationWithPivoting.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;OtherJoins.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/OtherJoins.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/OtherJoins.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;InnerJoin.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/InnerJoin.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/InnerJoin.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;general.txt&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/general.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/general.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;DocCheatSheet.txt&quot; tooltip=&quot;SparkTransformationsAndActions/src/DocCheatSheet.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/DocCheatSheet.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;reduceFoldDoc.txt&quot; tooltip=&quot;MarkLewisSparkScala/src/standardscala/reduceFoldDoc.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MarkLewisSparkScala/src/standardscala/reduceFoldDoc.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;AggregateFunctionsTwo.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/AggregateFunctionsTwo.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/AggregateFunctionsTwo.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;WordsCountInvertIndexPatternMatching.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexPatternMatching.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexPatternMatching.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;WordsCountInvertIndex.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndex.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndex.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;PatternMatchingMore.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/practice/PatternMatchingMore.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/com/practice/PatternMatchingMore.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;WordsCountInvertIndexTest.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexTest.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexTest.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;ForComprehension.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/functions_and_for_comprehension/ForComprehension.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/functions_and_for_comprehension/ForComprehension.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.scalaide.worksheet.editors.ScriptEditor&quot; name=&quot;LearningScala4.sc&quot; tooltip=&quot;LearningScala/src/LearningScala4.sc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LearningScala/src/LearningScala4.sc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.scalaide.worksheet.editors.ScriptEditor&quot; name=&quot;LearningScala3.sc&quot; tooltip=&quot;LearningScala/src/LearningScala3.sc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LearningScala/src/LearningScala3.sc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.scalaide.worksheet.editors.ScriptEditor&quot; name=&quot;LearningScala2.sc&quot; tooltip=&quot;LearningScala/src/LearningScala2.sc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LearningScala/src/LearningScala2.sc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;OptionSomeNone.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/general/OptionSomeNone.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/com/general/OptionSomeNone.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Fundamentals.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/methods/Fundamentals.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/com/methods/Fundamentals.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Examples.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/methods/Examples.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/JustEnoughScalaForSpark/src/com/methods/Examples.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;TempData.scala&quot; tooltip=&quot;MarkLewisSparkScala/src/standardscala/TempData.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MarkLewisSparkScala/src/standardscala/TempData.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;DifferentWaysOfCreatingDatasets.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/datasets/DifferentWaysOfCreatingDatasets.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/datasets/DifferentWaysOfCreatingDatasets.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;RDDTempData.scala&quot; tooltip=&quot;MarkLewisSparkScala/src/rdd/RDDTempData.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MarkLewisSparkScala/src/rdd/RDDTempData.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;LeftAndRightOuterJoin.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/LeftAndRightOuterJoin.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/LeftAndRightOuterJoin.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_ansToXgCEequP6tmTEomOA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_ansTongCEequP6tmTEomOA" x="0" y="0" width="1024" height="768">
@@ -49,7 +49,7 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_ansTp3gCEequP6tmTEomOA" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_ans8XngCEequP6tmTEomOA"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_ansTqHgCEequP6tmTEomOA" containerData="7500" selectedElement="_ansTqXgCEequP6tmTEomOA" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_ansTqXgCEequP6tmTEomOA" containerData="5000" selectedElement="_ansTq3gCEequP6tmTEomOA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_ansTqXgCEequP6tmTEomOA" containerData="5000" selectedElement="_ansTqngCEequP6tmTEomOA">
                 <children xsi:type="advanced:Placeholder" xmi:id="_ansTqngCEequP6tmTEomOA" elementId="org.eclipse.ui.editorss" containerData="6213" ref="_ans75HgCEequP6tmTEomOA"/>
                 <children xsi:type="basic:PartStack" xmi:id="_ansTq3gCEequP6tmTEomOA" elementId="problems" containerData="3787" selectedElement="_ansTrngCEequP6tmTEomOA">
                   <tags>General</tags>
@@ -92,315 +92,35 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_ans75HgCEequP6tmTEomOA" elementId="org.eclipse.ui.editorss" selectedElement="_ans75XgCEequP6tmTEomOA">
-      <children xsi:type="basic:PartStack" xmi:id="_ans75XgCEequP6tmTEomOA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ans8BXgCEequP6tmTEomOA">
+      <children xsi:type="basic:PartStack" xmi:id="_ans75XgCEequP6tmTEomOA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Jy3pMHo_Eeqz34CUiI4qxg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <tags>noFocus</tags>
-        <children xsi:type="basic:Part" xmi:id="_ans75ngCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="InnerJoin.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;InnerJoin.scala&quot; partName=&quot;InnerJoin.scala&quot; title=&quot;InnerJoin.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/InnerJoin.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/InnerJoin.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;106&quot; selectionOffset=&quot;28&quot; selectionTopPixel=&quot;539&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_tB1DkHo6Eeqz34CUiI4qxg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ForComprehension.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;ForComprehension.scala&quot; partName=&quot;ForComprehension.scala&quot; title=&quot;ForComprehension.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/functions_and_for_comprehension/ForComprehension.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JustEnoughScalaForSpark/src/functions_and_for_comprehension/ForComprehension.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;345&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
           <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans753gCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans76HgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans76XgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans76ngCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans763gCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans77HgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans77XgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans77ngCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans773gCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_ans78HgCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LeftAndRightOuterJoin.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;LeftAndRightOuterJoin.scala&quot; partName=&quot;LeftAndRightOuterJoin.scala&quot; title=&quot;LeftAndRightOuterJoin.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/LeftAndRightOuterJoin.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/LeftAndRightOuterJoin.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;106&quot; selectionOffset=&quot;28&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_82kK0Ho-Eeqz34CUiI4qxg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="WordsCountInvertIndexTest.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;WordsCountInvertIndexTest.scala&quot; partName=&quot;WordsCountInvertIndexTest.scala&quot; title=&quot;WordsCountInvertIndexTest.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexTest.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexTest.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;149&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
           <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans78XgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans78ngCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans783gCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans79HgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans79XgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans79ngCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_ans793gCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="OtherJoins.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;OtherJoins.scala&quot; partName=&quot;OtherJoins.scala&quot; title=&quot;OtherJoins.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/OtherJoins.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/OtherJoins.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;106&quot; selectionOffset=&quot;28&quot; selectionTopPixel=&quot;342&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_ADFKIHo_Eeqz34CUiI4qxg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PatternMatchingMore.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;PatternMatchingMore.scala&quot; partName=&quot;PatternMatchingMore.scala&quot; title=&quot;PatternMatchingMore.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/practice/PatternMatchingMore.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JustEnoughScalaForSpark/src/com/practice/PatternMatchingMore.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;990&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
           <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans7-HgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans7-XgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans7-ngCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans7-3gCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans7_HgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans7_XgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_ans7_ngCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DealingWithDuplicatedColumnNames.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;DealingWithDuplicatedColumnNames.scala&quot; partName=&quot;DealingWithDuplicatedColumnNames.scala&quot; title=&quot;DealingWithDuplicatedColumnNames.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/joins/DealingWithDuplicatedColumnNames.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/joins/DealingWithDuplicatedColumnNames.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3295&quot; selectionTopPixel=&quot;828&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans7_3gCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8AHgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8AXgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8AngCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8A3gCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8BHgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_ans8BXgCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AggregationWithPivoting.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;AggregationWithPivoting.scala&quot; partName=&quot;AggregationWithPivoting.scala&quot; title=&quot;AggregationWithPivoting.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/AggregationWithPivoting.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/AggregationWithPivoting.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;39&quot; selectionOffset=&quot;116&quot; selectionTopPixel=&quot;630&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_Jy3pMHo_Eeqz34CUiI4qxg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="WordsCountInvertIndexPatternMatching.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;WordsCountInvertIndexPatternMatching.scala&quot; partName=&quot;WordsCountInvertIndexPatternMatching.scala&quot; title=&quot;WordsCountInvertIndexPatternMatching.scala&quot; tooltip=&quot;JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexPatternMatching.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JustEnoughScalaForSpark/src/com/practice/WordsCountInvertIndexPatternMatching.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;598&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8BngCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8B3gCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8CHgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8CXgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8SngCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8S3gCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_ans8THgCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CollectionGroupValues.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;CollectionGroupValues.scala&quot; partName=&quot;CollectionGroupValues.scala&quot; title=&quot;CollectionGroupValues.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/CollectionGroupValues.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/CollectionGroupValues.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8TXgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8TngCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8T3gCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8UHgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8UXgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8UngCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_ans8U3gCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="GroupingWithAgg.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;GroupingWithAgg.scala&quot; partName=&quot;GroupingWithAgg.scala&quot; title=&quot;GroupingWithAgg.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/GroupingWithAgg.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/GroupingWithAgg.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;355&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8VHgCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8VXgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8VngCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8V3gCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8WHgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8WXgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_ans8WngCEequP6tmTEomOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MultipleAggPerGroup.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;MultipleAggPerGroup.scala&quot; partName=&quot;MultipleAggPerGroup.scala&quot; title=&quot;MultipleAggPerGroup.scala&quot; tooltip=&quot;SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/MultipleAggPerGroup.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SparkTransformationsAndActions/src/com/spark/sql/aggregations/with_grouping/MultipleAggPerGroup.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;124&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8W3gCEequP6tmTEomOA" elementId="#CompilationUnitEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitEditorContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8XHgCEequP6tmTEomOA" elementId="#CompilationUnitRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CompilationUnitRulerContext</tags>
-            <tags>popup:scala.tools.eclipse.ScalaSourceFileEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_ans8XXgCEequP6tmTEomOA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -505,40 +225,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ans8nngCEequP6tmTEomOA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8n3gCEequP6tmTEomOA" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8oHgCEequP6tmTEomOA" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8oXgCEequP6tmTEomOA" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8ongCEequP6tmTEomOA" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8o3gCEequP6tmTEomOA" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8pHgCEequP6tmTEomOA" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8pXgCEequP6tmTEomOA" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ans8pngCEequP6tmTEomOA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_anvYNXgCEequP6tmTEomOA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8p3gCEequP6tmTEomOA" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8qHgCEequP6tmTEomOA" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8qXgCEequP6tmTEomOA" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans8qngCEequP6tmTEomOA" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Yi4voHo5Eeqz34CUiI4qxg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_anvYNXgCEequP6tmTEomOA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ans8q3gCEequP6tmTEomOA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -546,90 +233,12 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ans8z3gCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans80HgCEequP6tmTEomOA" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans80XgCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.toggleWordWrap">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans80ngCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans803gCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans81HgCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ans81XgCEequP6tmTEomOA" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans81ngCEequP6tmTEomOA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans813gCEequP6tmTEomOA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans82HgCEequP6tmTEomOA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans82XgCEequP6tmTEomOA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans82ngCEequP6tmTEomOA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans823gCEequP6tmTEomOA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans83HgCEequP6tmTEomOA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans83XgCEequP6tmTEomOA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans83ngCEequP6tmTEomOA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans833gCEequP6tmTEomOA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans84HgCEequP6tmTEomOA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans84XgCEequP6tmTEomOA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ans84ngCEequP6tmTEomOA" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans843gCEequP6tmTEomOA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_ans85HgCEequP6tmTEomOA" elementId="openType">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthwHgCEequP6tmTEomOA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthwXgCEequP6tmTEomOA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthwngCEequP6tmTEomOA" elementId="openType">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthw3gCEequP6tmTEomOA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthxHgCEequP6tmTEomOA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthxXgCEequP6tmTEomOA" elementId="openType">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthxngCEequP6tmTEomOA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_anthx3gCEequP6tmTEomOA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -637,34 +246,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_anthyXgCEequP6tmTEomOA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthyngCEequP6tmTEomOA" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthy3gCEequP6tmTEomOA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthzHgCEequP6tmTEomOA" elementId="backardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthzXgCEequP6tmTEomOA" elementId="forwardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anthzngCEequP6tmTEomOA" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_anthz3gCEequP6tmTEomOA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_anvX5ngCEequP6tmTEomOA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anth0HgCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anth0XgCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anth0ngCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_anth03gCEequP6tmTEomOA" elementId="scala.tools.eclipse.ScalaSourceFileEditor" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Yi8aAHo5Eeqz34CUiI4qxg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_anvX5ngCEequP6tmTEomOA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_anth1HgCEequP6tmTEomOA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -676,12 +258,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_anth2HgCEequP6tmTEomOA" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anth2XgCEequP6tmTEomOA" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_anth2ngCEequP6tmTEomOA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_anth23gCEequP6tmTEomOA" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -1649,6 +1225,23 @@
     <tags>View</tags>
     <tags>categoryTag:Other</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_anuxG3gCEequP6tmTEomOA" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_anvZcngCEequP6tmTEomOA"/>
   <commands xmi:id="_anuxHHgCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_anvZW3gCEequP6tmTEomOA"/>
   <commands xmi:id="_anuxHXgCEequP6tmTEomOA" elementId="org.eclipse.ui.edit.text.toggleWordWrap" commandName="Toggle Word Wrap" description="Toggle word wrap in the current text editor" category="_anvZWXgCEequP6tmTEomOA"/>
