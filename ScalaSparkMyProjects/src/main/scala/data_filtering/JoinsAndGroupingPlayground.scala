@@ -1,8 +1,8 @@
-import RddPlayground.{countCoOccurrences, getHeroIdAndName, spark}
+package data_filtering
+
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{DoubleType, StringType, StructField, StructType}
-import org.apache.spark.sql.functions._
 
 case class SuperHero (id:Long, name:String)
 case class HeroCoOccurrences (id:Long, others:Seq[Long])
@@ -17,7 +17,6 @@ object JoinsAndGroupingPlayground  extends App  {
     .master("local[*]")
     .appName("DataFramesTransformations")
     .getOrCreate()
-  import spark.implicits._
 
   def countCoOccurrences(line: String) = {
     var elements = line.split("\\s+")
@@ -44,6 +43,8 @@ object JoinsAndGroupingPlayground  extends App  {
   val marvelDataDF = spark.createDataFrame(marvelData)
   val heroCoOccurrencesDF = spark.createDataFrame(heroCoOccurrences)
 
+  val temData = spark.read.csv("../data/1800.csv")
+
   // joining two columns with marvel data and removin duplicated id column
   val heroJoinData = marvelDataDF.join(heroCoOccurrencesDF, marvelDataDF.col("id") === heroCoOccurrencesDF.col("id"))
                                                                                             .drop(heroCoOccurrencesDF.col("id"))
@@ -66,7 +67,8 @@ object JoinsAndGroupingPlayground  extends App  {
   val headers = customerOrdersDF.first()
   val customerOrdersDF2 = customerOrdersDF.filter(line => line != headers)
 
-  customerOrdersDF2.select("date", "vix_open", "vix_close").orderBy('vix_open.desc).show(10)
+
+  temData.show(10)
 
 
 

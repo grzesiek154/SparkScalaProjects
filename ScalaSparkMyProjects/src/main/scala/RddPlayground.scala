@@ -1,8 +1,9 @@
+import data_filtering.HeroCoOccurrences
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 
-case class SuperHero (id:Long, name:String)
-case class HeroCoOccurrences (id:Long, others:Seq[Long])
+//case class data_filtering.SuperHero (id:Long, name:String)
+//case class data_filtering.HeroCoOccurrences (id:Long, others:Seq[Long])
 
 object RddPlayground extends  App {
 

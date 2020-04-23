@@ -1,16 +1,29 @@
 package data_filtering
 
+import com.sun.xml.internal.bind.v2.TODO
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
+import scala.util.matching.Regex
+
+
+//scala.util.matching.Regex.MatchIterator = non-empty iterator - means that returned value is an iterator and need to be accessed via proper method
+
 
 object RegexTest {
 
   Logger.getLogger("org").setLevel(Level.ERROR)
 
-  def filterTextFile(line: String) = {
+  val address = "123 Main Street Suite 101"
+  val someList = List(1,2,44,5,76,234,9)
 
-    val pattern = "^the".r
-    pattern.findFirstIn(line)
+  val numPattern = "[0-9]+".r
+  val textPattern = "Will".r
+
+
+
+  def filterData(line: String, rgx:Regex) = {
+
+    rgx.findFirstIn(line)
   }
 
   def main(args: Array[String]): Unit = {
@@ -23,16 +36,33 @@ object RegexTest {
     import spark.implicits._
 
     val rddTextFile = spark.sparkContext.textFile("book.txt").flatMap(line => line.split("\\n"))
+    val fakeFriends = scala.io.Source.fromFile("fakefriends.csv").getLines()
+
+    val test = fakeFriends.flatMap(line => filterData(line, textPattern))
+
+    test.foreach(println)
 
 
 
-    //val book = scala.io.Source.fromFile("book.txt").toString()
 
-//    println(rddTextFile)
+
+
+
+
+
+//    fakeFriends.foreach(println)
+//    matches.foreach { i =>
+//      println(s"Got an element: $i")
+//    }
+
     val pattern = rddTextFile.take(1)
-    //rddTextFile.foreach(println)
 
-    pattern.foreach(println)
 
+    //pattern.foreach(println)
+
+    //TODO
+    // 1. MATCHED VALUES FORM CSV TO A LIST
+    // 2. PRACTICE OTHER REGEX AND MAKE A DUCMENTATION
+    // 3. PREPARE REGEX CHET SHEET
   }
 }

@@ -36,7 +36,11 @@ object AggregationWithPivoting extends App {
     Student("kirby", "F", 115, 2016),
     Student("Jeff", "M", 195, 2016)).toDF
 
+    studentsDF.show()
+    
   studentsDF.groupBy("graduation_year").pivot("gender").avg("weight").show()
+  
+  
 
   //    The previous example has one aggregation, and the gender categorical column has
   //only two possible unique values; therefore, the result table has only two columns. If the

@@ -14,5 +14,3 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.5"
 // https://mvnrepository.com/artifact/org.scala-lang/scala-library
 libraryDependencies += "org.scala-lang" % "scala-library" % "2.11.11"
 
-// https://mvnrepository.com/artifact/io.github.sugakandrey/scala-compiler-indices-protocol
-libraryDependencies += "io.github.sugakandrey" %% "scala-compiler-indices-protocol" % "0.1.0"

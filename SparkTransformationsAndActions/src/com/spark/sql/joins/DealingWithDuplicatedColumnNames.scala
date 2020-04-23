@@ -42,7 +42,8 @@ object DealingWithDuplicatedColumnNames extends App {
   
   val deptDF2 = deptDF.withColumn("dept_no", 'id)
   
-  //Spark SQL functions lit() and typedLit() are used to add a new column by assigning a literal or constant value to Spark DataFrame. Both functions return Column as return type. 
+  //Spark SQL functions lit() and typedLit() are used to add a new column by assigning a literal or constant value
+  //to Spark DataFrame. Both functions return Column as return type. 
   val deptDF3 = deptDF.withColumn("asd", lit("test"))
   
 val dupNameDF = employeeDF.join(deptDF2, employeeDF.col("dept_no") === deptDF2.col("dept_no"))
