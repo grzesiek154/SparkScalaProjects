@@ -39,5 +39,5 @@ object WindowFunctionsSQL extends App {
 
   // cumulative sum
   spark.sql(
-    "select name, tx_date, amount, round(culm_sum,2) as moving_avg from ( select name, tx_date, amount, SUM(amount) OVER PARTITION BY name ORDER BY tx_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW ) as culm_sum from tx_data)").show
+    "select name, tx_date, amount, round(culm_sum,2) as moving_avg FROM ( select name, tx_date, amount, SUM(amount) OVER PARTITION BY name ORDER BY tx_date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW ) as culm_sum from tx_data)").show
 }
