@@ -33,11 +33,14 @@ object WindowFunctionIntroduction extends App{
 
   // define window specification to partition by name and order by amount in descending amount
   val forRankingWindow = Window.partitionBy("name").orderBy(desc("amount"))
+                    
   
   // add a new column to contain the rank of each row, apply the rank function to rank each row
   val txDataWithRankDF = txDataDF.withColumn("rank", rank().over(forRankingWindow))
+  val txDataWithRankDF2 = txDataDF.withColumn("rank", lag('name, 1).over(forRankingWindow))
   
   txDataWithRankDF.where('rank < 3).show()
+  txDataWithRankDF2.show()
   
   //2.What is the difference between the transaction amount of each user and their highest transaction amount?
    
@@ -61,7 +64,7 @@ object WindowFunctionIntroduction extends App{
   //3.What is the moving average transaction amount of each user?
   
  // define the window specification
-// a good practice is to specify the offset relative to Window.currentRow
+// a good practice is to specify the offset(rozstaw) relative to Window.currentRow
   val forMovingAvgWindow = Window.partitionBy("name").orderBy("tx_date")
                             .rowsBetween(Window.currentRow -1, Window.currentRow + 1)
 //   For this particular example, you want each

@@ -19,8 +19,6 @@ object RegexTest {
   val numPattern = "[0-9]+".r
   val textPattern = "Will".r
 
-
-
   def filterData(line: String, rgx:Regex) = {
 
     rgx.findFirstIn(line)
@@ -35,30 +33,17 @@ object RegexTest {
       .getOrCreate()
     import spark.implicits._
 
+    val someText = "to jest testowy teks 123 asd 987"
+    val textRDD = spark.sparkContext.parallelize(someText)
     val rddTextFile = spark.sparkContext.textFile("book.txt").flatMap(line => line.split("\\n"))
+
     val fakeFriends = scala.io.Source.fromFile("fakefriends.csv").getLines()
 
     val test = fakeFriends.flatMap(line => filterData(line, textPattern))
-
-    test.foreach(println)
-
-
-
-
-
-
-
-
-
-//    fakeFriends.foreach(println)
-//    matches.foreach { i =>
-//      println(s"Got an element: $i")
-//    }
-
     val pattern = rddTextFile.take(1)
 
 
-    //pattern.foreach(println)
+    rddTextFile.foreach(println)
 
     //TODO
     // 1. MATCHED VALUES FORM CSV TO A LIST
