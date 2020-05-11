@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90a5ae7d-58b2-4cb0-bc9a-86ec4194705f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/DataFrameAndSQL/WindowFunctionsPlayground.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BigDataAnalyticswithSpark" beforeDir="false" afterPath="$PROJECT_DIR$/../BigDataAnalyticswithSpark" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustEnoughScalaForSpark/.cache-main" beforeDir="false" afterPath="$PROJECT_DIR$/../JustEnoughScalaForSpark/.cache-main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MarkLewisSparkScala/.cache-main" beforeDir="false" afterPath="$PROJECT_DIR$/../MarkLewisSparkScala/.cache-main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MarkLewisSparkScala/.settings/org.scala-ide.sdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../MarkLewisSparkScala/.settings/org.scala-ide.sdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/data_filtering/RegexTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/data_filtering/RegexTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/data_filtering/RegexTest$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/data_filtering/RegexTest$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/data_filtering/RegexTest$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/data_filtering/RegexTest$$anonfun$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/data_filtering/RegexTest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/data_filtering/RegexTest$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SparkTransformationsAndActions/.cache-main" beforeDir="false" afterPath="$PROJECT_DIR$/../SparkTransformationsAndActions/.cache-main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SparkTransformationsAndActions/src/Template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../SparkTransformationsAndActions/src/Template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SparkTransformationsAndActions/src/com/spark/sql/adv_analytics_functions/WindowFunctionIntroduction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../SparkTransformationsAndActions/src/com/spark/sql/adv_analytics_functions/WindowFunctionIntroduction.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
