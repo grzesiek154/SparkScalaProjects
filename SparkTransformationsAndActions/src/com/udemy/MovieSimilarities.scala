@@ -94,7 +94,8 @@ object MovieSimilarities {
   }
 
   def main(args: Array[String]) = {
-    Logger.getLogger("org").setLevel(Level.ERROR)
+    Logger.getLogger("org").setLevel(Level.FATAl) 
+    
 
     val spark = SparkSession.builder
       .master("local[*]")
