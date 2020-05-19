@@ -80,6 +80,7 @@ object T_And_A_Playground {
       val memberInfo = sc.parallelize(List((110, "a"), (127, "b"), (126, "b"),
                       (105, "a"),(165, "c")))
                       
+                      
        val joinTxInfo = memberTx.join(memberInfo)
        println("!!!!Join starts!!!!!")
        joinTxInfo.collect().foreach(println)
