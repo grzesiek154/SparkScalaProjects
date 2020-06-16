@@ -34,7 +34,8 @@ object FileDataSource extends App {
     .master("local[*]")
     .appName("StructuredStreamingOperations")
     .getOrCreate()
-
+    
+  
   import spark.implicits._
 
   val mobileDataDF = spark.read.json("../data/beginning-apache-spark-2-master/chapter6/data/mobile")

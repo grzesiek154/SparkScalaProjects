@@ -24,10 +24,13 @@ object WindowFunctionIntroduction extends App{
     ("John", "2017-07-02", 13.35),
     ("John", "2017-07-06", 27.33),
     ("John", "2017-07-04", 21.72),
+    ("John", "2017-07-05", 31.73),
     ("Mary", "2017-07-07", 69.74),
     ("Mary", "2017-07-01", 59.44),
     ("Mary", "2017-07-05", 80.14))
     .toDF("name", "tx_date", "amount")
+    
+   
     
     // 1. For each user, what are the two highest transaction amounts?
 
@@ -38,9 +41,12 @@ object WindowFunctionIntroduction extends App{
   // add a new column to contain the rank of each row, apply the rank function to rank each row
   val txDataWithRankDF = txDataDF.withColumn("rank", rank().over(forRankingWindow))
   val txDataWithRankDF2 = txDataDF.withColumn("rank", lag('name, 1).over(forRankingWindow))
+  val txDataWithRankDF3 = txDataDF.withColumn("rank", lead('name, 1).over(forRankingWindow))
+  println("lag function")
   
   txDataWithRankDF.where('rank < 3).show()
   txDataWithRankDF2.show()
+  txDataWithRankDF3.show()
   
   //2.What is the difference between the transaction amount of each user and their highest transaction amount?
    
