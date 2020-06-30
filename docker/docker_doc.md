@@ -25,3 +25,23 @@ As containers are autonomous, they provide strong isolation, ensuring they do no
 Unlike virtual machines (VMs) where virtualization happens at the hardware  level, containers virtualize at the app layer. They can utilize one  machine, share its kernel, and virtualize the operating system to run  isolated processes. This makes containers extremely **lightweight**, allowing you to retain valuable resources.
 
 ![The difference in structure between containers and virtual machines](https://phoenixnap.com/kb/wp-content/uploads/2019/10/container-vs-virtual-machine.png)
+
+
+
+# Networking
+
+By default docker creates only one internal network
+
+We can create our onw network with:
+
+![image-20200616204638950](C:\Users\gmalarski\AppData\Roaming\Typora\typora-user-images\image-20200616204638950.png)
+
+![image-20200616210117662](C:\Users\gmalarski\AppData\Roaming\Typora\typora-user-images\image-20200616210117662.png)
+
+![image-20200616210411195](C:\Users\gmalarski\AppData\Roaming\Typora\typora-user-images\image-20200616210411195.png)
+
+![image-20200616211927586](C:\Users\gmalarski\AppData\Roaming\Typora\typora-user-images\image-20200616211927586.png)
+
+```dockerfile
+docker run --network=wp-mysql-network -e DB_Host=mysql-db -e  DB_Password=db_pass123 -p 38080:8080 --name webapp --link  mysql-db:mysql-db -d kodekloud/simple-webapp-mysql
+```
